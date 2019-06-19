@@ -14,7 +14,7 @@
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'AzureAcademy_aulas'
     location: 'East US 2'
-    templateLocation: 'URL of the file'
+    templateLocation: 'https://conta1a.blob.core.windows.net/teste/template.json'
     deploymentMode: 'Incremental'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
