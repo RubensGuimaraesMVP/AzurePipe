@@ -1,4 +1,13 @@
 # Starter pipeline
+- task: AzureFileCopy@3
+  inputs:
+    SourcePath: '$(Build.StagingDirectory)'
+    azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
+    Destination: 'AzureBlob'
+    storage: 'conta1a'
+    ContainerName: 'teste'
+    outputStorageUri: 'artifactsLocation'
+    outputStorageContainerSasToken: 'artifactsLocationSasToken'
 - task: AzureResourceGroupDeployment@2
   inputs:
     azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
