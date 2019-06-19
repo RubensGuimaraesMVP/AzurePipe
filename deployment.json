@@ -1,0 +1,49 @@
+{
+  "id": "/subscriptions/d5fa2fea-677e-4061-b6d0-6c7689b76d9f/resourceGroups/AzureAcademy_aulas/providers/Microsoft.Resources/deployments/Microsoft.DataFactory-datafac14az",
+  "name": "Microsoft.DataFactory-datafac14az",
+  "properties": {
+    "templateHash": "14128561579849405937",
+    "parameters": {
+      "name": {
+        "type": "String",
+        "value": "datafac14az"
+      },
+      "location": {
+        "type": "String",
+        "value": "EastUS"
+      },
+      "apiVersion": {
+        "type": "String",
+        "value": "2018-06-01"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2019-06-11T13:43:03.1979531Z",
+    "duration": "PT9.9100351S",
+    "correlationId": "2df45c06-6743-48fe-9849-8802c81b6433",
+    "providers": [
+      {
+        "namespace": "Microsoft.DataFactory",
+        "resourceTypes": [
+          {
+            "resourceType": "factories",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "outputResources": [
+      {
+        "id": "/subscriptions/d5fa2fea-677e-4061-b6d0-6c7689b76d9f/resourceGroups/AzureAcademy_aulas/providers/Microsoft.DataFactory/factories/datafac14az"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
