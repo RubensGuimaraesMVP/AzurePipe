@@ -16,7 +16,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 # Starter pipeline
-- task: AzureFileCopy
+- task: AzureFileCopy@1
   inputs:
     SourcePath: '$(Build.StagingDirectory)'
     azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
@@ -25,7 +25,7 @@ steps:
     ContainerName: 'teste'
     outputStorageUri: 'artifactsLocation'
     outputStorageContainerSasToken: 'artifactsLocationSasToken'
-- task: AzureResourceGroupDeployment
+- task: AzureResourceGroupDeployment@2
   inputs:
     azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
     action: 'Create Or Update Resource Group'
