@@ -1,5 +1,5 @@
 # Starter pipeline
-- task: AzureFileCopy
+- task: AzureFileCopy@1
   inputs:
     SourcePath: '$(Build.StagingDirectory)'
     azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
