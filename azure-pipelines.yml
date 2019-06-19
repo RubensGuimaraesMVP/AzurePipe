@@ -14,25 +14,3 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-
-# Starter pipeline
-- task: AzureFileCopy@1
-  inputs:
-    SourcePath: '$(Build.StagingDirectory)'
-    azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
-    Destination: 'AzureBlob'
-    storage: 'conta1a'
-    ContainerName: 'teste'
-    outputStorageUri: 'artifactsLocation'
-    outputStorageContainerSasToken: 'artifactsLocationSasToken'
-- task: AzureResourceGroupDeployment@2
-  inputs:
-    azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'AzureAcademy_aulas'
-    location: 'East US 2'
-    templateLocation: 'https://conta1a.blob.core.windows.net/teste/deployment.json'
-    deploymentMode: 'Incremental'
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
