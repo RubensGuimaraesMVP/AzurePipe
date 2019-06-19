@@ -1,5 +1,5 @@
 # Starter pipeline
-- task: AzureFileCopy@3
+- task: AzureFileCopy
   inputs:
     SourcePath: '$(Build.StagingDirectory)'
     azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
@@ -8,7 +8,7 @@
     ContainerName: 'teste'
     outputStorageUri: 'artifactsLocation'
     outputStorageContainerSasToken: 'artifactsLocationSasToken'
-- task: AzureResourceGroupDeployment@2
+- task: AzureResourceGroupDeployment
   inputs:
     azureSubscription: 'Microsoft Azure Sponsorship(d5fa2fea-677e-4061-b6d0-6c7689b76d9f)'
     action: 'Create Or Update Resource Group'
